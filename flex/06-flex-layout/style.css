@@ -18,7 +18,16 @@ button {
   background: #eee;
 }
 
-/*  */
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+}
 
 input {
   border: 1px solid #ddd;
@@ -31,5 +40,37 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.header,
+.left-links,
+.right-links,
+.footer,
+.content {
+  display: flex;
+}
+
+.header,
+.footer {
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.left-links,
+.right-links {
+  gap: 16px;
+}
+
+.footer {
+  background-color: #eeeeee;
+}
+
+.content {
+  flex-direction: column;
   align-items: center;
+  gap: 16px;
+}
+
+button {
+  padding: 8px 16px;
 }
